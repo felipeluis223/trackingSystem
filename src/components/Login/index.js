@@ -1,5 +1,7 @@
 import { BsPersonCircle, BsKeyFill, BsEyeFill } from 'react-icons/bs';
 import { FcGoogle } from 'react-icons/fc';
+import Lottie from 'react-lottie';
+import { welcomeOptions } from '../../lotties/configsLotties'
 
 function Login(){
     return(
@@ -43,7 +45,10 @@ function Login(){
                     </div>
                 </div>
             </section>
-            
+
+            <section className="hidden sm:block sm:w-[50%] sm:h-screen sm:flex sm:justify-center sm:items-center">
+                <Lottie options={welcomeOptions} width={500} height={440}/>
+            </section>            
         </section>
     )
 }
