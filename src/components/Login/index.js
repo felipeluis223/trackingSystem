@@ -1,14 +1,13 @@
 import { BsPersonCircle, BsKeyFill, BsEyeFill } from 'react-icons/bs';
 import { FcGoogle } from 'react-icons/fc';
-import Lottie from 'react-lottie';
-import { welcomeOptions } from '../../lotties/configsLotties'
+import team from '../../img/virtual.png'
 
 function Login(){
     return(
-        <section className="w-full h-screen  bg-[#1f1f1f] sm:bg-[#ffffff] flex flex-row sm:flex-row-reverse justify-center items-center sm:justify-start sm:rounded-none">
+        <section className="w-full h-screen  bg-[#1f1f1f] sm:bg-[#1f1f1f] flex flex-row sm:flex-row-reverse justify-center items-center sm:justify-start sm:rounded-none">
             <section className="w-full sm:w-[50%] sm:h-screen bg-[#242424] rounded-md sm:rounded-none p-[20px] sm:flex sm:flex-col sm:justify-center sm:items-center">
                 <div className="w-full sm:w-[80%] min-h-[300px] pb-[10px] sm:min-h-[50%] flex flex-col justify-center items-center">
-                    <h3 className="w-[80%] text-[#fffafa] font-bold text-3xl">Hey, <span className="text-[#ff0]">hello</span></h3>
+                    <h3 className="w-[80%] text-[#fffafa] font-bold text-3xl">Hey, <span className="text-[#ffff00f7]">hello</span></h3>
                     <span className="w-[80%] text-[#C0C0C0] text-sm">Enter the information you entered while registering</span>
                     <div className="w-[80%] h-full mt-[20px] flex flex-col">
                         <div className="w-full h-[60px] sm:max-w-[400px] border-b-2 border-gray-400 hover:border-sky-500 duration-100">
@@ -33,7 +32,7 @@ function Login(){
                                     <a className="text-[#C0C0C0] hover:text-[#0EA5E9] text-sm">Forgot password?</a>
                                 </div>
                             </div>
-                            <button className="w-full h-[40px] bg-[#ff0] rounded-md text-lg font-bold">Login</button>
+                            <button className="w-full h-[40px] bg-[#ffff00f7] rounded-md text-lg font-bold">Login</button>
                         </div>
 
                         <div className="w-full h-[40px] mt-[10px]">
@@ -47,7 +46,8 @@ function Login(){
             </section>
 
             <section className="hidden sm:block sm:w-[50%] sm:h-screen sm:flex sm:justify-center sm:items-center">
-                <Lottie options={welcomeOptions} width={500} height={440}/>
+                {/* <Lottie options={welcomeOptions} width={300} height={300}/> */}
+                <img src={team} className="w-[450px]" />
             </section>            
         </section>
     )
