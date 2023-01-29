@@ -1,12 +1,15 @@
 import { useState } from 'react';
 
-import { useSelector, useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+
+import { useDispatch } from 'react-redux';
 import { loginUser } from '../../redux/user/actions';
 
 import { FcGoogle } from 'react-icons/fc';
 import { BsEyeSlashFill, BsEyeFill } from 'react-icons/bs';
 
 import team from '../../img/virtual.png';
+import logo from '../../img/logo.png';
 
 import { standardUser } from './standard-user';
 
@@ -24,6 +27,9 @@ function Login(){
     // Settings - Redux:
     const dispatch = useDispatch();
 
+    // Settings - redirect:
+    const navigate = useNavigate()
+
     // Responsible for login:
     const handleLogin = () => {
 
@@ -33,6 +39,9 @@ function Login(){
             // Storing data:
             dispatch(loginUser(standardUser));
             
+            // Redirect: 
+            navigate("/home")
+
             const msg = "Uhuul! Welcome Admin";
             toast.success(msg, {
                 theme: "dark"
@@ -105,8 +114,9 @@ function Login(){
                 </div>
             </section>
 
-            <section className="w-full h-[400px] sm:w-[50%] sm:h-screen sm:flex sm:justify-center sm:items-center">
-                <img src={team} className="w-[450px]" />
+            <section className="w-full min-h-[1 00px] sm:w-[50%] sm:h-screen sm:flex sm:flex-col sm:justify-center sm:items-center">
+                <img src={logo} className="w-[200px]" />
+                <img src={team} className="hidden sm:block sm:w-[450px]" />
             </section>            
         </section>
     )

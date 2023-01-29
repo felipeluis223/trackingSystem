@@ -4,5 +4,6 @@ export const standardUser = {
     password: "admin1234",
     name: "Administration Project",
     email: "admin@gmail.com",
-    company: "AdministrationProject"    
+    company: "AdministrationProject",
+    phone: "(19)91275-9876"
 }
