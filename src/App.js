@@ -7,6 +7,7 @@ import Profile from './components/Profile';
 import Dashboard from './components/Dashboard';
 import ErrorPage from './components/ErrorPage';
 import Contracts from './components/Contracts';
+import Home from './components/Home';
 
 // Settings - routes
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     path: "home",
     element: <Template />,
     children: [
+      {
+        path: "welcome",
+        element: <Home />
+      },
       {
         path: "users",
         element: <Users />,

@@ -40,7 +40,7 @@ function Login(){
             dispatch(loginUser(standardUser));
             
             // Redirect: 
-            navigate("/home")
+            navigate("/home/welcome")
 
             const msg = "Uhuul! Welcome Admin";
             toast.success(msg, {
