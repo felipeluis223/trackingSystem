@@ -1,8 +1,12 @@
 import { useState } from 'react';
 
-import { BsEyeSlashFill, BsEyeFill } from 'react-icons/bs';
+import { useSelector, useDispatch } from 'react-redux';
+import { loginUser } from '../../redux/user/actions';
+
 import { FcGoogle } from 'react-icons/fc';
-import team from '../../img/virtual.png'
+import { BsEyeSlashFill, BsEyeFill } from 'react-icons/bs';
+
+import team from '../../img/virtual.png';
 
 import { standardUser } from './standard-user';
 
@@ -17,16 +21,25 @@ function Login(){
     // Responsible for the passoword:
     const handleShowPassord = () => setShowPassword(!showPassword);
 
+    // Settings - Redux:
+    const dispatch = useDispatch();
 
+    // Responsible for login:
     const handleLogin = () => {
+
+        // verifying user:
         if(username === standardUser.username && password === standardUser.password){
-            const msg = "Uhuul! Seja bem-vindo Admin";
+
+            // Storing data:
+            dispatch(loginUser(standardUser));
+            
+            const msg = "Uhuul! Welcome Admin";
             toast.success(msg, {
                 theme: "dark"
             });
         }
         else{
-            const msg = "Ops! Informações inválidas";
+            const msg = "Ops! Invalid information. Please, try again";
             toast.warning(msg, {
                 theme: "dark"
             });
