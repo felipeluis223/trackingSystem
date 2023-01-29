@@ -1,10 +1,12 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Template from './Template';
+import Users from './components/Users';
 import Login from "./components/Login";
 import Profile from './components/Profile';
 import Dashboard from './components/Dashboard';
 import ErrorPage from './components/ErrorPage';
+import Contracts from './components/Contracts';
 
 // Settings - routes
 const router = createBrowserRouter([
@@ -18,13 +20,22 @@ const router = createBrowserRouter([
     element: <Template />,
     children: [
       {
-        path: "profile",
-        element: <Profile />,
+        path: "users",
+        element: <Users />,
+      },
+      {
+        path: "contracts",
+        element: <Contracts />,
       },
       {
         path: "dashboard",
         element: <Dashboard />,
       },
+      {
+        path: "profile",
+        element: <Profile />,
+      },
+
     ]
   }
 ]);
