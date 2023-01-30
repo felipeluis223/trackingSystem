@@ -71,7 +71,9 @@ function Home(){
                     </div>
                 </div>
             </section>
-            <Outlet />
+            <section className="w-full h-screen overflow-y-auto">
+                <Outlet />
+            </section>
         </section>
     );
 }
