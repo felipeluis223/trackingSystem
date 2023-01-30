@@ -15,6 +15,7 @@ function Home(){
     const handleProfile = () => navigate("profile");
     const handleHome = () => navigate("welcome");
     const handleDashboard = () => navigate("dashboard");
+    const handleUsers = () => navigate("users");
     const handleLogout = ()=> {
         dispatch(logoutUser())
         navigate("/");
@@ -36,7 +37,10 @@ function Home(){
                         <span className="text-lg">Home</span>
                     </div>
 
-                    <div className="w-[90%] h-[50px] flex flex-row items-center pl-[15px] text-[#ffffff] hover:text-[#0EA5E9] hover:border-b-[1px] hover:border-sky-500 duration-100 ">
+                    <div 
+                        className="w-[90%] h-[50px] flex flex-row items-center pl-[15px] text-[#ffffff] hover:text-[#0EA5E9] hover:border-b-[1px] hover:border-sky-500 duration-100 "
+                        onClick={handleUsers}
+                    >
                         <BsPeopleFill style={{fontSize: 20, marginRight: 5}} />
                         <span className="text-lg">Users</span>
                     </div>
