@@ -16,6 +16,7 @@
     "bootstrap": "^5.2.3",
     "chart.js": "^4.2.0",
     "lottie-web": "^5.10.2",
+    "rc-table": "^7.30.3",
     "react": "^18.2.0",
     "react-alert": "^7.0.3",
     "react-bootstrap": "^2.7.0",
