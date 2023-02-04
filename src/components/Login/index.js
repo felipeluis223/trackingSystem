@@ -99,13 +99,13 @@ function Login(){
                                 className="w-full h-[40px] bg-[#ffff00f7] rounded-md text-lg font-bold"
                                 onClick={handleLogin}
                             >Login</button>
-                        </div>
 
-                        <div className="w-full h-[40px] mt-[10px]">
-                            <button className="w-full h-full text-sm bg-[#ffffff] rounded-md flex flex-row justify-center items-center">
-                                <FcGoogle className="mr-[5px]" />
-                                Sign in with Google
-                            </button>
+                            <div className="w-full h-[40px] mt-[10px]">
+                                <button className="w-full h-full text-sm bg-[#ffffff] rounded-md flex flex-row justify-center items-center">
+                                    <FcGoogle className="mr-[5px]" />
+                                    Sign in with Google
+                                </button>
+                            </div>
                         </div>
 
                         <ToastContainer />

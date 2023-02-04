@@ -29,10 +29,6 @@ const router = createBrowserRouter([
         element: <Users />,
       },
       {
-        path: "contracts",
-        element: <Contracts />,
-      },
-      {
         path: "dashboard",
         element: <Dashboard />,
       },
