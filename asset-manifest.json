@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/felipeluis223/interfaceWebLogin/static/css/main.d188670c.css",
+    "main.js": "/felipeluis223/interfaceWebLogin/static/js/main.cc504caa.js",
+    "static/media/slide3.png": "/felipeluis223/interfaceWebLogin/static/media/slide3.50b4a2b60855fc68607c.png",
+    "static/media/virtual.png": "/felipeluis223/interfaceWebLogin/static/media/virtual.c97fd5bc1a31a726efe0.png",
+    "static/media/company.png": "/felipeluis223/interfaceWebLogin/static/media/company.8e1fe6ddfcfdb5b2fae8.png",
+    "static/media/security-data.png": "/felipeluis223/interfaceWebLogin/static/media/security-data.a25f6ee1cf65f9eea575.png",
+    "static/media/slide2.png": "/felipeluis223/interfaceWebLogin/static/media/slide2.50885bd838bbc985b91c.png",
+    "static/media/slide1.png": "/felipeluis223/interfaceWebLogin/static/media/slide1.de559a667c7a0f563a03.png",
+    "static/media/slide4.png": "/felipeluis223/interfaceWebLogin/static/media/slide4.cf3f3e9f527a57ca5d5f.png",
+    "static/media/logo.png": "/felipeluis223/interfaceWebLogin/static/media/logo.228bf9a66b9c74b6e8af.png",
+    "index.html": "/felipeluis223/interfaceWebLogin/index.html",
+    "main.d188670c.css.map": "/felipeluis223/interfaceWebLogin/static/css/main.d188670c.css.map",
+    "main.cc504caa.js.map": "/felipeluis223/interfaceWebLogin/static/js/main.cc504caa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d188670c.css",
+    "static/js/main.cc504caa.js"
+  ]
+}
