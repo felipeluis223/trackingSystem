@@ -6,7 +6,7 @@ import Login from "./components/Login";
 import Profile from './components/Profile';
 import Dashboard from './components/Dashboard';
 import ErrorPage from './components/ErrorPage';
-import Contracts from './components/Contracts';
+import ManageTeam from './components/Team';
 import Home from './components/Home';
 
 // Settings - routes
@@ -27,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "users",
         element: <Users />,
+      },
+      {
+        path: "team",
+        element: <ManageTeam />,
       },
       {
         path: "dashboard",

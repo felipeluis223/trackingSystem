@@ -1,6 +1,8 @@
 import { Outlet, useNavigate } from "react-router-dom";
 
-import { BsFillHouseFill, BsFillPersonLinesFill, BsBarChartFill, BsPeopleFill, BsBriefcaseFill } from 'react-icons/bs';
+import { BsFillHouseFill, BsFillPersonLinesFill, BsBarChartFill, BsPeopleFill } from 'react-icons/bs';
+import { MdGroups } from 'react-icons/md';
+
 import { TbLogin } from 'react-icons/tb';
 
 import logo from '../img/logo.png';
@@ -16,6 +18,7 @@ function Home(){
     const handleHome = () => navigate("welcome");
     const handleDashboard = () => navigate("dashboard");
     const handleUsers = () => navigate("users");
+    const handleTeam = () => navigate("team");
     const handleLogout = ()=> {
         dispatch(logoutUser())
         navigate("/");
@@ -44,7 +47,7 @@ function Home(){
                         <BsPeopleFill style={{fontSize: 20, marginRight: 5}} />
                         <span className="text-lg">Users</span>
                     </div>
-
+                                        
                     <div 
                         className="w-[90%] h-[50px] flex flex-row items-center pl-[15px] text-[#ffffff] hover:text-[#0EA5E9] hover:border-b-[1px] hover:border-sky-500 duration-100 "
                         onClick={handleDashboard}
@@ -53,6 +56,13 @@ function Home(){
                         <span className="text-lg">Dashboard</span>
                     </div>
                     
+                    <div className="w-[90%] h-[50px] flex flex-row items-center pl-[15px] text-[#ffffff] hover:text-[#0EA5E9] hover:border-b-[1px] hover:border-sky-500 duration-100 "
+                        onClick={handleTeam}
+                    >
+                        <MdGroups style={{fontSize: 25, marginRight: 5}} />
+                        <span className="text-lg">Team</span>
+                    </div>
+
                     <div 
                         className="w-[90%] h-[50px] flex flex-row items-center pl-[15px] text-[#ffffff] hover:text-[#0EA5E9] hover:border-b-[1px] hover:border-sky-500 duration-100 "
                         onClick={handleProfile}
