@@ -21,23 +21,23 @@ function Users(){
         {
             company: "Company3",
             users: usersCompany3,
-        },
+        }
     ]
     // Recebendo os dados e armazenando:
     let getUsersAPI = async()=>{
         // Gerando os usuários da primeira empresa:
-        await getUsers().then((item)=>{
-            setUsersCompany1(usersCompany1=>([ ...usersCompany1, ...item.data ]))
+        await getUsers(4).then((item)=>{
+            setUsersCompany1(usersCompany1=>([ ...usersCompany1, ...item ]))
         })
 
         // Gerando os usuários da segunda empresa:
-        await getUsers().then((item)=>{
-            setUsersCompany2(usersCompany2=>([ ...usersCompany2, ...item.data ]))
+        await getUsers(23).then((item)=>{
+            setUsersCompany2(usersCompany2=>([ ...usersCompany2, ...item ]))
         })
 
         // Gerando os usuários da terceira empresa:
-        await getUsers().then((item)=>{
-            setUsersCompany3(usersCompany3=>([ ...usersCompany3, ...item.data ]))
+        await getUsers(15).then((item)=>{
+            setUsersCompany3(usersCompany3=>([ ...usersCompany3, ...item ]))
         })
     }
 
@@ -46,7 +46,7 @@ function Users(){
         getUsersAPI();
         setCallController(true);
     }
-    
+    console.log()
     return (
         <section className="w-full h-[700px] flex justify-center">
             <div className="w-[90%] h-full flex flex-col">
