@@ -4,7 +4,7 @@ import { BsFillHouseFill, BsFillPersonLinesFill, BsBarChartFill, BsPeopleFill } 
 
 export const menuItems = (navigate)=>{
     return [
-        { path:() => navigate("welcome"), title: 'Home', icon: <BsFillHouseFill /> },
+        { path:() => navigate("/home"), title: 'Home', icon: <BsFillHouseFill /> },
         { path:() => navigate("users"), title: 'Users', icon: <BsPeopleFill /> },
         { path:() => navigate("dashboard"), title: 'Dashboard', icon: <BsBarChartFill /> },
         { path:() => navigate("team"), title: 'Team', icon: <MdGroups /> },
