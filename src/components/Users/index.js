@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { columns} from './columns';
 import DataTable from './containerTable';
-import getUsers from "../../services/api";
+import getUsers from "../../services/randomuser";
 
 function Users(){
     const [ usersCompany1, setUsersCompany1 ] = useState([]);
